@@ -1,4 +1,4 @@
-## 19-Implementacion de manejadores de dispositivos Utilizando RTC DS3231
+## 19-Implementacion de manejadores de dispositivos (RTC DS3231)
 
 https://datasheets.maximintegrated.com/en/ds/DS3231.pdf
 
