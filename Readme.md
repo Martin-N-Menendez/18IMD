@@ -115,3 +115,96 @@ Carga del device tree y kernel a la BB:
    ``` 
     rmmod myeeprom.ko
   ```
+
+# Ejemplo de resultados:
+ ```
+# insmod myeeprom.ko
+[12555.695613] I2C: Inicializando el driver I2C
+[12555.700236] I2C registrado exitosamente con numero mayor  246
+[12555.706094] I2C: clase registrada correctamente
+[12555.712979] I2C: clase de dispositivo creada correctamente
+[12555.718805] Iniciando myeeprom!
+# ./test.e
+Abriendo el dispositivo.[12559.474038] I2C: Se ha abierto el dispositivo 1 vece(s)
+
+Ingrese el modo de operacion:
+1 > Ver todo
+2 > Ver hora
+3 > Ver dia de la semana
+4 > Ver fecha
+5 > Ver temperatura
+0 > Salida
+5
+[12561.325677] ############################
+[12561.329833] Temperatura: 24 
+[12561.332737] ############################
+Ingrese el modo de operacion:
+1 > Ver todo
+2 > Ver hora
+3 > Ver dia de la semana
+4 > Ver fecha
+5 > Ver temperatura
+0 > Salida
+4
+[12562.524515] ############################
+[12562.528666] Fecha: 19 / 5 / 19
+[12562.531745] ############################
+Ingrese el modo de operacion:
+1 > Ver todo
+2 > Ver hora
+3 > Ver dia de la semana
+4 > Ver fecha
+5 > Ver temperatura
+0 > Salida
+3
+[12563.620142] ############################
+[12563.624205] Hoy es Miercoles
+[12563.627228] ############################
+Ingrese el modo de operacion:
+1 > Ver todo
+2 > Ver hora
+3 > Ver dia de la semana
+4 > Ver fecha
+5 > Ver temperatura
+0 > Salida
+2
+[12564.547655] ############################
+[12564.551720] 19 : 25 : 53
+[12564.554273] ############################
+Ingrese el modo de operacion:
+1 > Ver todo
+2 > Ver hora
+3 > Ver dia de la semana
+4 > Ver fecha
+5 > Ver temperatura
+0 > Salida
+1
+[12565.644074] ############################
+[12565.648222] 19 : 25 : 54
+[12565.650779] Hoy es Miercoles
+[12565.653681] Fecha: 19 / 5 / 19
+[12565.656756] Temperatura: 24 
+[12565.659742] ############################
+Ingrese el modo de operacion:
+1 > Ver todo
+2 > Ver hora
+3 > Ver dia de la semana
+4 > Ver fecha
+5 > Ver temperatura
+0 > Salida
+0
+Fin del programa
+[12568.035665] I2C: Dispositivo cerrado exitosamente
+# rmmod myeeprom.ko
+[12572.238230] Removiendo myeeprom
+[12572.242408] ############################
+[12572.246460] 19 : 26 : 1
+[12572.249114] Miercoles
+[12572.251413] 3 | 19 / 5 / 19
+[12572.254226] Temperatura: 24 
+[12572.257204] ############################
+[12572.263441] I2C: remocion exitosa.
+ ```
+
+
+
