@@ -9,8 +9,6 @@
 #include <linux/string.h>
 #include <linux/types.h>
 
-/* Add your code here */
-
 #define  DEVICE_NAME "i2c_gonza"    ///< The device will appear at /dev/i2c using this value
 #define  CLASS_NAME  "i2c"        ///< The device class -- this is a character device driver
 
@@ -42,19 +40,6 @@ static struct file_operations fops =
    .write = dev_write,
    .release = dev_release,
 };
- 
-
-
-
-
-
-
-
-
-
-
-
-
 
 // SPDX-License-Identifier: GPL-2.0
 #include <linux/init.h>
@@ -102,7 +87,6 @@ MODULE_DEVICE_TABLE(of, myeeprom_of_match);
 
 #define BUFFER_SIZE 20
 const char ADDRESS[] = {0x00,0x00};
-
 
 //**********************************************************************************************
 
@@ -237,21 +221,6 @@ static ssize_t dev_write(struct file *filep, const char *buffer, size_t len, lof
     }
                 
     Show_data(mpu9250_output_buffer,message[0]);
-
-   //copy_from_user(message,buffer, len);
-   //size_of_message = strlen(message);                 // store the length of the stored message
-   //pr_info("EBBChar: Received %zu characters from the user\n", len);
-   
-   //Como la operacion de escritura en esta memoria NO PUEDE ser interrumpida por un bit START
-    //hay que meter todo en el mismo string
-    //buf[0] = ADDRESS[0];
-    //buf[1] = ADDRESS[1];
-
-    //strcpy(buf+2,message);
-    //pr_info("Copiado: %s a buffer.",buf+2);
-    //Ret = i2c_master_send(modClient, buf, size_of_message+2);
-    
-    //Show_data(mpu9250_output_buffer);
      
    return len;
 }
