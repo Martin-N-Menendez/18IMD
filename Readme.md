@@ -69,48 +69,49 @@ Carga del device tree y kernel a la BB:
   setenv bootargs root=/dev/nfs rw ip=192.168.1.100 console=ttyO0,115200n8 nfsroot=192.168.1.1:/home/menendez91/linux-kernel-labs/modules/nsfroot,nfsvers=3
   
  6) Ejecutar en la BB: 
- 
+ ```
     tftp 0x81000000 zImage
     
     tftp 0x92000000 am335x-customboneblack.dtb
     
     bootz 0x81000000 - 0x82000000
-    
+ ```   
  7) La BB se reiniciará, el usuario a utilizar es root
  
  Instanciación del módulo:
  
  1) Agregar myeeprom.c,test.c y makefile en ../linux-kernel-labs/modules/nfsroot/root/myeeprom
  2) Ejecutar:
- 
+ ```
     cd myeeprom/
     insmod myeeprom.ko
-    
+ ```  
  3) Ir a /dev y ejecutar ls para comprobar que el dispositivo se encuentra correctamente instanciado
  4) volver a myeeprom/
  
  Compilación y ejecución del programa
  
  1) Para compilar se deberá estar en la terminal en la carpeta ../linux-kernel-labs/modules/nfsroot/root/myeeprom y ejecutar:
- 
+ ```
  arm-linux-gnueabi-gcc -static test.c -o test.e
- 
+ ```
  2) Se obtiene test.e como ejecutable
  3) En la BB dentro de la carpeta myeeprom ejecutar:
- 
+ ```
     ./test.e
-    
+ ```   
  4) Se tienen 5 modos de operacion en pantalla:
- 
+ ```
     1 > Ver todo -> Equivalente a ejecutar todos los otros modos de operación a la vez
     2 > Ver hora -> Se le pedirá al RTC la hora en formado HH:MM:SS
     3 > Ver dia de la semana -> Se el pedirá al RTC que indique que día es hoy
     4 > Ver fecha -> Se le pedirá al RTC que indique la fecha en formado DD/MM/AA
     5 > Ver temperatura -> Se le pedirá al RTC que indique la temperatura en celsius
     0 > Salida -> Fin del programa
-    
+  ```  
   Cualquier otro modo pedido será inválido y se repreguntará las veces que sean necesarias, hasta que se ingrese el modo 0 para salir.
   
   5) Al finalizar remover el modulo ejecutando:
-    
+   ``` 
     rmmod myeeprom.ko
+  ```
