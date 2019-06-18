@@ -1,19 +1,19 @@
 ## 18 IMD Utilizando RTC DS3231
 
 https://datasheets.maximintegrated.com/en/ds/DS3231.pdf
+
 # Logros:
 
-- [x] Escritura de hora/fecha/dia al instanciar
-- [x] Lectura de hora/fecha/dia/temperatura
-- [x] Correcta conversión de los registros en valores numéricos coherentes
-- [x] Programa de usuario que permite elegir que valor leer
-- [x] Modularización de las funciones para separar el parseo de la presentación de los datos
-- [ ] Seteo de la hora por parte del usuario
-- [ ] Seteo de alarmas
-- [ ] Seteo de AM/PM
+- [x] Escritura de hora/fecha/dia al instanciar.
+- [x] Lectura de hora/fecha/dia/temperatura al instanciar/remover o por medio del usuario.
+- [x] Correcta conversión de los registros en valores numéricos coherentes.
+- [x] Programa de usuario que permite elegir que valor leer.
+- [x] Modularización de las funciones para separar el parseo de la presentación de los datos.
+- [ ] Seteo de la hora por parte del usuario.
+- [ ] Seteo de alarmas.
+- [ ] Seteo de AM/PM.
 
-
-# Contenido:
+# Contenido del repositorio:
 1) Código fuente del device driver que hayan desarrollado.
 
   myeeprom.c
