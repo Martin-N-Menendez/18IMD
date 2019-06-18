@@ -1,5 +1,12 @@
 ## 18 IMD
 
+# Logros:
+
+- [x] Finish my changes
+- [ ] Push my commits to GitHub
+- [ ] Open a pull request
+
+
 # Contenido:
 1) Código fuente del device driver que hayan desarrollado.
 
