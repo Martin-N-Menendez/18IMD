@@ -1,10 +1,17 @@
-## 18 IMD
+## 18 IMD Utilizando RTC DS3231
+
+https://datasheets.maximintegrated.com/en/ds/DS3231.pdf
 
 # Logros:
 
-- [x] Finish my changes
-- [ ] Push my commits to GitHub
-- [ ] Open a pull request
+- [x] Escritura de hora/fecha/dia al instanciar
+- [x] Lectura de hora/fecha/dia/temperatura
+- [x] Correcta conversión de los registros en valores numéricos coherentes
+- [x] Programa de usuario que permite elegir que valor leer
+- [x] Modularización de las funciones para separar el parseo de la presentación de los datos
+- [ ] Seteo de la hora por parte del usuario
+- [ ] Seteo de alarmas
+- [ ] Seteo de AM/PM
 
 
 # Contenido:
