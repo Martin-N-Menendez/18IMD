@@ -9,9 +9,9 @@ https://datasheets.maximintegrated.com/en/ds/DS3231.pdf
 - [x] Correcta conversión de los registros en valores numéricos coherentes.
 - [x] Programa de usuario que permite elegir que valor leer.
 - [x] Modularización de las funciones para separar el parseo de la presentación de los datos.
-- [ ] Seteo de la hora por parte del usuario.
-- [ ] Seteo de alarmas.
-- [ ] Seteo de AM/PM.
+- [ ] \(Optional) Seteo de la hora por parte del usuario.
+- [ ] \(Optional) Seteo de alarmas.
+- [ ] \(Optional) Seteo de AM/PM.
 
 # Contenido del repositorio:
 1) Código fuente del device driver que hayan desarrollado.
