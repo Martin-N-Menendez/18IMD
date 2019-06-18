@@ -55,7 +55,7 @@ Compilación del kernel:
 
 Compilación del device tree:
 
-1) En ../linux-kernel-labs/src/linux se modifico una copia am335x-boneblack.dtb para habilitar el bus I2C de la placa.
+1) En ../linux-kernel-labs/src/linux/arch/arm/boot/dts/ se modifico una copia am335x-boneblack.dtb para habilitar el bus I2C de la placa.
 2) Ejecutar:
 ```
   make dtbs
