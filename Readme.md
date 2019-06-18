@@ -96,6 +96,7 @@ Carga del device tree y kernel a la BB:
  1) Agregar myeeprom.c,test.c y makefile en ../linux-kernel-labs/modules/nfsroot/root/myeeprom
  2) Ejecutar:
  ```
+    make
     cd myeeprom/
     insmod myeeprom.ko
  ```  
