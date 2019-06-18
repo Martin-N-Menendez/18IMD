@@ -16,7 +16,7 @@ https://datasheets.maximintegrated.com/en/ds/DS3231.pdf
 # Contenido del repositorio:
 1) Código fuente del device driver que hayan desarrollado.
 
-  myeeprom.c
+ > myeeprom.c
   
 2) Código fuente de la aplicación de usuario que lo usa (no es obligatorio que esté escrita en C).
 
