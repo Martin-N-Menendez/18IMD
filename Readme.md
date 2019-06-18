@@ -1,5 +1,6 @@
 ## 18 IMD
 
+# Contenido:
 1) Código fuente del device driver que hayan desarrollado.
 
   myeeprom.c
@@ -21,3 +22,8 @@
   Presentacion.ppt
   
 6) README explicando cómo se usa el driver.
+
+# Instrucciones:
+a
+b
+c
