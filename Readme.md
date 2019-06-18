@@ -1,7 +1,6 @@
 ## 18 IMD Utilizando RTC DS3231
 
 https://datasheets.maximintegrated.com/en/ds/DS3231.pdf
-
 # Logros:
 
 - [x] Escritura de hora/fecha/dia al instanciar
