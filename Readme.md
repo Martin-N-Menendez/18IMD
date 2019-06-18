@@ -20,19 +20,19 @@ https://datasheets.maximintegrated.com/en/ds/DS3231.pdf
   
 2) Código fuente de la aplicación de usuario que lo usa (no es obligatorio que esté escrita en C).
 
-  test.c
+ > test.c
   
 3) Device tree "custom".
 
-   am335x-customboneblack.dtb
+ >  am335x-customboneblack.dtb
   
 4) Makefiles correspondientes para compilar el driver y la aplicación, si es necesario.
 
-  Makefile
+>  Makefile
   
 5) Material utilizado para la presentación en clase.
 
-  Presentacion.ppt
+>  Presentacion.ppt
   
 6) README explicando cómo se usa el driver.
 
