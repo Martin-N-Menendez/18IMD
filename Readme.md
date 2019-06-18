@@ -97,11 +97,14 @@ Carga del device tree y kernel a la BB:
  2) Ejecutar:
  ```
     make
+ ```
+ 3) En la BB ejecutar:
+ ```
     cd myeeprom/
     insmod myeeprom.ko
  ```  
- 3) Ir a /dev y ejecutar ls para comprobar que el dispositivo se encuentra correctamente instanciado
- 4) volver a myeeprom/
+ 4) Ir a /dev y ejecutar ls para comprobar que el dispositivo se encuentra correctamente instanciado
+ 5) volver a myeeprom/
  
  Compilación y ejecución del programa
  
