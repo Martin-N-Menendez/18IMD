@@ -120,9 +120,9 @@ Carga del device tree y kernel a la BB:
  4) Se tienen 5 modos de operacion en pantalla:
  ```
     1 > Ver todo -> Equivalente a ejecutar todos los otros modos de operación a la vez
-    2 > Ver hora -> Se le pedirá al RTC la hora en formado HH:MM:SS
+    2 > Ver hora -> Se le pedirá al RTC la hora en formato HH:MM:SS
     3 > Ver dia de la semana -> Se el pedirá al RTC que indique que día es hoy
-    4 > Ver fecha -> Se le pedirá al RTC que indique la fecha en formado DD/MM/AA
+    4 > Ver fecha -> Se le pedirá al RTC que indique la fecha en formato DD/MM/AA
     5 > Ver temperatura -> Se le pedirá al RTC que indique la temperatura en celsius
     0 > Salida -> Fin del programa
   ```  
