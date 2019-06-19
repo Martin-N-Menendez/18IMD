@@ -32,7 +32,7 @@ https://datasheets.maximintegrated.com/en/ds/DS3231.pdf
   
 5) Material utilizado para la presentación en clase.
 
->  https://docs.google.com/presentation/d/1MA5sRsCMgNUqkUWAGHTY9cbsq7G2MxMdyRVlW63p07M/edit#slide=id.g35ed75ccf_022
+>  https://docs.google.com/presentation/d/1MA5sRsCMgNUqkUWAGHTY9cbsq7G2MxMdyRVlW63p07M/edit?usp=sharing
   
 6) README explicando cómo se usa el driver.
 
